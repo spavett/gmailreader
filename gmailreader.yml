@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://redpi.local:8080
+functions:
+  gmailreader:
+    lang: golang-middleware
+    handler: ./gmailreader
+    image: ghcr.io/spavett/gmailreader:latest
+
